@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{fontenc}
+\usepackage[francais]{babel}
+%\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{hmargin=2cm,vmargin=1.5cm}
+\title{\textbf{MATH-F-112: Rappels}}
+\author{Romain Grimau}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section*{S\'eance 1: logique, \'egalit\'e/in\'egalit\'e, r\'ecurrence}
+...
+\section*{S\'eance 2: nombres}
+...
+\section*{S\'eance 3:trigonom\'etrie}
+...
+\section*{S\'eance 4:fonctions}
+...
+\section*{S\'eance 5: combinatoire}
+Choisir $\textbf{k}$ \'el\'ements parmis $\textbf{n}$, l'ordre n'a pas d'importance : \(C_n^k\) ou \(\binom{n}{k}\) \\ \newline
+\indent Choisir $\textbf{k}$ \'el\'ements parmis $\textbf{n}$ sans r\'ep\'etition, l'ordre \`a de l'importance :
+\begin{align*}
+    n! & =  n\cdot(n-1)\cdot ... \cdot2\cdot1 \\
+    A_n^k & =  \frac{n!}{(n-k)!}
+\end{align*}
+\indent Choisir $\textbf{k}$ \'el\'ements parmis $\textbf{n}$ avec r\'ep\'etition, l'ordre \`a de l'importance : \(n^k\)
+\section*{S\'eance 6:}
+\section*{S\'eance 7:g\'eom\'etrie analytique}
+\'Equations du plan: \\
+\indent \indent Pour $\vec{u}$ et $\vec{v}$, 2 vecteurs directeurs
+\(\left \lbrace
+   \begin{array}{rcl}
+      x & = & x_0+\mu u_1+\lambda v_1 \\
+      y & = & y_0+ \mu u_2+\lambda v_2 \\
+      z & = & x_0+ \mu u_3+\lambda v_3
+   \end{array}
+\right. \) \\ \newline
+\indent \indent Pour un vecteur normal $\vec{n} = (a, b, c)$: $ax+by+cz+d=0$ \\ \newline
+\indent Produit scalaire de 2 vecteurs $\vec{u}, \vec{v}$:
+$\vec{u}\cdot\vec{v} = \|\vec{u}\| \cdot \|\vec{v}\| \cdot \cos{\theta}$ \\ \newline
+\indent \'Equation d'une droite: \\
+\indent \indent Pour $\vec{u}$, le vecteur directeur
+\(\left \lbrace
+	\begin{array}{rcl}
+		x & = & x_0+tu_1 \\
+		y & = & y_0+tu_2 \\
+		z & = & z_0+tu_3
+	\end{array} \right. \) $\rightarrow$ $\frac{x-x_0}{u_1} = \frac{y-y_0}{u_2} = \frac{z-z_0}{u_3}$ \\
+
+\indent Produit vectoriel de $\vec{u}, \vec{v}$: $\vec{u} \times \vec{v} = (u_2v_3 - u_3v_2, u_3v_1 - u_1v_3, u_1v_2 - u_2v_1)$ \\
+
+\indent Distance entre un point $(p_1, p_2, p_3)$ et une droite avec $\vec{n} = (a, b, c)$ : $\frac{ap_1+bp_2+cp_3+d}{\sqrt{a^2+b^2+c^2}}$\\
+\section*{S\'eance 8:}
+\section*{S\'eance 9:fonctions et \'equations trigonom\'etriques et logarithmes}
+\section*{S\'eance 10:limites}
+Si $\underset{x\to a}\lim f$ et $\underset{x\to a}\lim g$  $\exists$ $\Rightarrow$ 
+\(
+\begin{array}{lcl}
+    \lim (f+g) & = & \lim f + \lim g \\
+    \lim (f \cdot g) & = &  \lim f \cdot \lim g 
+\end{array}\) \\ \newline
+\indent Si $\underset{x\to a}\lim f$ et $\underset{x\to a}\lim g$  $\exists$ et $\underset{x\to a}\lim g \not= 0$ $\Rightarrow$ $\lim{\frac{f}{g}} = \frac{\lim{f}}{\lim{g}}$ \\ \newline
+\indent Si $\underset{x\to a}\lim l = L$ et $\underset{t\to L}\lim g(t)$  $\exists$ $\Rightarrow$ $\underset{x\to a}\lim g(f(x)) = \underset{t\to L}\lim  g(t)$ \\
+\section*{S\'eance 11: limites et asymptotes}
+La droite $x = a$ est une asymptote verticale \`a $f$ si: $\underset{x\to a^{-}}\lim f(x) = \pm \infty$ ou $\underset{x\to a^{+}}\lim = \pm \infty$ \\ \newline
+
+La droite $y = b$ est une asymptote horizontale \`a $f$ si: $\underset{x\to -\infty}\lim f(x) = b$ ou $\underset{x\to +\infty}\lim f(x) = b$ \\ \newline
+
+La droite $y = mx + b$ est une asymptote oblique \`a $f$ si:\(\underset{x\to \pm \infty}\lim \frac{f(x)}{x} = m \not= 0 \) et \(\underset{x\to \pm \infty}\lim f(x)-m(x) = b \) \\ \newline
+$f$ est asymptotiquement du m\^eme ordre que $g$ si : $\underset{x\to \infty}\lim |\frac{f(x)}{g(x)}| \in \mathbb{R}\backslash_{\{0\}}$
+\section*{S\'eance 12:dérivées}
+
+\section*{S\'eance 13:dérivées}
+...
+\section*{S\'eance 14:Taylor}
+...
+\section*{S\'eance 15:primitives}
+...
+\section*{S\'eance 16:primitives}
+...
+\section*{S\'eance 17:primitives}
+...
+\section*{S\'eance 18:fractions simples et intégrales définies}
+...
+\section*{S\'eance 19:int\'egrales d\'efinies}
+...
+\section*{S\'eance 20:courbes}
+...
+\section*{S\'eance 21:matrices et sytm\`emes}
+...
+
+
+\end{document}
