@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage{fontenc}
-\usepackage[francais]{babel}
+\usepackage[french]{babel}
 %\usepackage[utf8]{inputenc}
 \usepackage{amsmath, amssymb}
 \usepackage{geometry}
@@ -19,13 +19,35 @@
 \maketitle
 
 \section*{S\'eance 1: logique, \'egalit\'e/in\'egalit\'e, r\'ecurrence}
-...
+implication : $\rightarrow$ \\
+\indent double implication (si et seulement si): $\leftrightarrow$ \\
+\indent et : $\land$ \\
+\indent ou : $\lor$ \\
+\indent n\'egation : $\lnot$ \\
+\indent \textbf{S}uffisance implique \textbf{N}\'ecessaire: $S \rightarrow N$ \\
+\indent contrapos\'ee de $A \rightarrow B$ = $\lnot A \rightarrow \lnot B$ et $(A\rightarrow B) \leftrightarrow (\lnot A \rightarrow \lnot B)$
 \section*{S\'eance 2: nombres}
 ...
 \section*{S\'eance 3:trigonom\'etrie}
-...
+\begin{multicols}{2}
+$\cos(\alpha) = \cos(-\alpha)$\\
+\indent$\sin(\pi - \alpha) = \sin(\alpha)$ \\
+$\sin(-\alpha) = -\sin(\alpha)$ \\
+$\cos(\pi - \alpha) = - \cos(\alpha)$
+\end{multicols}
+Dans triangle rectangle : $SOH - CAH - TOA - CAO$ \\ 
+\indent Pythagore : $ hypot\acute enuse^{2} = adjacent^{2} + oppos\acute e^{2}$ \\
+\indent Dans un triangle quelconque : $\frac{\sin(\hat{A})}{a} = \frac{sin(\hat{B})}{b} = \frac{sin(\hat{C})}{c}$ \\
 \section*{S\'eance 4:fonctions}
-...
+$f : dom \rightarrow im$\\
+\indent $dom f : \lbrace x|f(x) \exists \rbrace$, tous les $x$ pour lesquels il existe un $y$ \\ \newline
+\indent Parit\'e :
+$\left \lbrace \begin{tabular}{r c l }
+	\(\forall x, f(x)\) & \(=\) & \(f(-x)\) PAIRE \\
+	\(\forall x, -f(x)\) & \(=\) & \(-f(x)\) IMPAIRE
+\end{tabular}\right.$ \\ \newline
+\indent Fonction p\'eriodique : si $\exists$ $p$ tel que $\forall x, f(x+p) = f(x)$ \\
+\indent P\'eriodicit\'e: Si $f$ et $g$ sont p\'eriodiques, $f+g$ est p\'eriodique et une p\'eriode possible est le \indent$ppcm$ de la p\'eriode de $f$ et de la p\'eriode de $g$. 
 \section*{S\'eance 5: combinatoire}
 Choisir $\textbf{k}$ \'el\'ements parmis $\textbf{n}$, l'ordre n'a pas d'importance : \(C_n^k\) ou \(\binom{n}{k}\) \\ \newline
 \indent Choisir $\textbf{k}$ \'el\'ements parmis $\textbf{n}$ sans r\'ep\'etition, l'ordre \`a de l'importance :
@@ -35,7 +57,18 @@ Choisir $\textbf{k}$ \'el\'ements parmis $\textbf{n}$, l'ordre n'a pas d'importa
 \end{align*}
 \indent Choisir $\textbf{k}$ \'el\'ements parmis $\textbf{n}$ avec r\'ep\'etition, l'ordre \`a de l'importance : \(n^k\)
 \section*{S\'eance 6:g\'eom\'etrie analytique}
-...
+\begin{tabular}{lcl}
+	 $(d)$ &$:$& $ax+by+cz+d = 0 \rightarrow \vec{v_{(d)}} = (-b, a)$\\
+	 $(d')$&$:$& $a'x+b'y+c'z+d' = 0 \rightarrow \vec{v'_{(d')}} = (-b', a')$
+\end{tabular} \\
+\indent Si $(d // d') \Rightarrow \vec{v_{(d)}} = \vec{v'_{(d')}}$ \\ \newline
+\indent$\left .
+\begin{tabular}{lcl}
+	 $(d)$ &$:$& $y = mx+p $\\
+	 $(d')$&$:$& $y = m'x+p'$
+\end{tabular}
+\right \rbrace (d) // (d') \Rightarrow m = m'$ \\ \newline
+\indent $(d) \perp (d') \Rightarrow m\cdot m' = -1$
 \section*{S\'eance 7:g\'eom\'etrie analytique}
 \'Equations du plan: \\
 \indent \indent Pour $\vec{u}$ et $\vec{v}$, 2 vecteurs directeurs
@@ -88,11 +121,11 @@ Si $\underset{x\to a}\lim f$ et $\underset{x\to a}\lim g$  $\exists$ $\Rightarro
 \indent Si $\underset{x\to a}\lim f$ et $\underset{x\to a}\lim g$  $\exists$ et $\underset{x\to a}\lim g \not= 0$ $\Rightarrow$ $\lim{\frac{f}{g}} = \frac{\lim{f}}{\lim{g}}$ \\ \newline
 \indent Si $\underset{x\to a}\lim l = L$ et $\underset{t\to L}\lim g(t)$  $\exists$ $\Rightarrow$ $\underset{x\to a}\lim g(f(x)) = \underset{t\to L}\lim  g(t)$ \\
 \section*{S\'eance 11: limites et asymptotes}
-La droite $x = a$ est une asymptote verticale \`a $f$ si: $\underset{x\to a^{-}}\lim f(x) = \pm \infty$ ou $\underset{x\to a^{+}}\lim = \pm \infty$ \\ \newline
+\noindent La droite $x = a$ est une asymptote verticale \`a $f$ si: $\underset{x\to a^{-}}\lim f(x) = \pm \infty$ ou $\underset{x\to a^{+}}\lim = \pm \infty$ \\ \newline
 
-La droite $y = b$ est une asymptote horizontale \`a $f$ si: $\underset{x\to -\infty}\lim f(x) = b$ ou $\underset{x\to +\infty}\lim f(x) = b$ \\ \newline
+\noindent La droite $y = b$ est une asymptote horizontale \`a $f$ si: $\underset{x\to -\infty}\lim f(x) = b$ ou $\underset{x\to +\infty}\lim f(x) = b$ \\ \newline
 
-La droite $y = mx + b$ est une asymptote oblique \`a $f$ si:\(\underset{x\to \pm \infty}\lim \frac{f(x)}{x} = m \not= 0 \) et \(\underset{x\to \pm \infty}\lim f(x)-m(x) = b \) \\ \newline
+\noindent La droite $y = mx + b$ est une asymptote oblique \`a $f$ si:\(\underset{x\to \pm \infty}\lim \frac{f(x)}{x} = m \not= 0 \) et \(\underset{x\to \pm \infty}\lim f(x)-m(x) = b \) \\ \newline
 $f$ est asymptotiquement du m\^eme ordre que $g$ si : $\underset{x\to \infty}\lim |\frac{f(x)}{g(x)}| \in \mathbb{R}\backslash_{\{0\}}$
 \section*{S\'eance 12:d\'eriv\'ees}
 Si $f$ est d\'erivable, alors $y = f'(a)(x-a)+f(a)$ est la droite tangente de $f$ au point $(a, f(a))$. \\
