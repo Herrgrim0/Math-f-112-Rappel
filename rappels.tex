@@ -19,6 +19,7 @@
 \maketitle
 
 \section*{S\'eance 1: logique, \'egalit\'e/in\'egalit\'e, r\'ecurrence}
+
 implication : $\rightarrow$ \\
 \indent double implication (si et seulement si): $\leftrightarrow$ \\
 \indent et : $\land$ \\
@@ -26,9 +27,13 @@ implication : $\rightarrow$ \\
 \indent n\'egation : $\lnot$ \\
 \indent \textbf{S}uffisance implique \textbf{N}\'ecessaire: $S \rightarrow N$ \\
 \indent contrapos\'ee de $A \rightarrow B$ = $\lnot A \rightarrow \lnot B$ et $(A\rightarrow B) \leftrightarrow (\lnot A \rightarrow \lnot B)$
+
 \section*{S\'eance 2: nombres}
+
 ...
-\section*{S\'eance 3:trigonom\'etrie}
+
+\section*{S\'eance 3: trigonom\'etrie}
+
 \begin{multicols}{2}
 $\cos(\alpha) = \cos(-\alpha)$\\
 \indent$\sin(\pi - \alpha) = \sin(\alpha)$ \\
@@ -37,8 +42,11 @@ $\cos(\pi - \alpha) = - \cos(\alpha)$
 \end{multicols}
 Dans triangle rectangle : $SOH - CAH - TOA - CAO$ \\ 
 \indent Pythagore : $ hypot\acute enuse^{2} = adjacent^{2} + oppos\acute e^{2}$ \\
-\indent Dans un triangle quelconque : $\frac{\sin(\hat{A})}{a} = \frac{sin(\hat{B})}{b} = \frac{sin(\hat{C})}{c}$ \\
-\section*{S\'eance 4:fonctions}
+\indent Dans un triangle quelconque : $\frac{\sin(\hat{A})}{a} = \frac{sin(\hat{B})}{b} = \frac{sin(\hat{C})}{c}$ \\ 
+\indent loi des cosinus : $c^{2} = a^{2}+b^{2} - 2ab\cos(\hat{c})$
+
+\section*{S\'eance 4: fonctions}
+
 $f : dom \rightarrow im$\\
 \indent $dom f : \lbrace x|f(x) \exists \rbrace$, tous les $x$ pour lesquels il existe un $y$ \\ \newline
 \indent Parit\'e :
@@ -48,7 +56,9 @@ $\left \lbrace \begin{tabular}{r c l }
 \end{tabular}\right.$ \\ \newline
 \indent Fonction p\'eriodique : si $\exists$ $p$ tel que $\forall x, f(x+p) = f(x)$ \\
 \indent P\'eriodicit\'e: Si $f$ et $g$ sont p\'eriodiques, $f+g$ est p\'eriodique et une p\'eriode possible est le \indent$ppcm$ de la p\'eriode de $f$ et de la p\'eriode de $g$. 
+
 \section*{S\'eance 5: combinatoire}
+
 Choisir $\textbf{k}$ \'el\'ements parmis $\textbf{n}$, l'ordre n'a pas d'importance : \(C_n^k\) ou \(\binom{n}{k}\) \\ \newline
 \indent Choisir $\textbf{k}$ \'el\'ements parmis $\textbf{n}$ sans r\'ep\'etition, l'ordre \`a de l'importance :
 \begin{align*}
@@ -56,7 +66,9 @@ Choisir $\textbf{k}$ \'el\'ements parmis $\textbf{n}$, l'ordre n'a pas d'importa
     A_n^k & =  \frac{n!}{(n-k)!}
 \end{align*}
 \indent Choisir $\textbf{k}$ \'el\'ements parmis $\textbf{n}$ avec r\'ep\'etition, l'ordre \`a de l'importance : \(n^k\)
-\section*{S\'eance 6:g\'eom\'etrie analytique}
+
+\section*{S\'eance 6: g\'eom\'etrie analytique}
+
 \begin{tabular}{lcl}
 	 $(d)$ &$:$& $ax+by+cz+d = 0 \rightarrow \vec{v_{(d)}} = (-b, a)$\\
 	 $(d')$&$:$& $a'x+b'y+c'z+d' = 0 \rightarrow \vec{v'_{(d')}} = (-b', a')$
@@ -68,8 +80,12 @@ Choisir $\textbf{k}$ \'el\'ements parmis $\textbf{n}$, l'ordre n'a pas d'importa
 	 $(d')$&$:$& $y = m'x+p'$
 \end{tabular}
 \right \rbrace (d) // (d') \Rightarrow m = m'$ \\ \newline
-\indent $(d) \perp (d') \Rightarrow m\cdot m' = -1$
-\section*{S\'eance 7:g\'eom\'etrie analytique}
+\indent $(d) \perp (d') \Rightarrow m\cdot m' = -1$ \\
+
+\'Equation du cercle de centre $(x_{c}, y_{c})$ et de rayon 1 : $(x-x_{c})^{2}+(y-y_{c})^{2} = 1^{2}$
+
+\section*{S\'eance 7: g\'eom\'etrie analytique}
+
 \'Equations du plan: \\
 \indent \indent Pour $\vec{u}$ et $\vec{v}$, 2 vecteurs directeurs
 \(\left \lbrace
@@ -81,7 +97,7 @@ Choisir $\textbf{k}$ \'el\'ements parmis $\textbf{n}$, l'ordre n'a pas d'importa
 \right. \) \\ \newline
 \indent \indent Pour un vecteur normal $\vec{n} = (a, b, c)$: $ax+by+cz+d=0$ \\ \newline
 \indent Produit scalaire de 2 vecteurs $\vec{u}, \vec{v}$:
-$\vec{u}\cdot\vec{v} = \|\vec{u}\| \cdot \|\vec{v}\| \cdot \cos{\theta}$ \\ \newline
+$\vec{u}\cdot\vec{v} = \|\vec{u}\| \cdot \|\vec{v}\| \cdot \cos{\theta} = v_{1}u_{1} + v_{2}u_{2}+ ... + v_{n}u_{n}$ \\ \newline
 \indent \'Equation d'une droite: \\
 \indent \indent Pour $\vec{u}$, le vecteur directeur
 \(\left \lbrace
@@ -93,10 +109,15 @@ $\vec{u}\cdot\vec{v} = \|\vec{u}\| \cdot \|\vec{v}\| \cdot \cos{\theta}$ \\ \new
 
 \indent Produit vectoriel de $\vec{u}, \vec{v}$: $\vec{u} \times \vec{v} = (u_2v_3 - u_3v_2, u_3v_1 - u_1v_3, u_1v_2 - u_2v_1)$ \\
 
-\indent Distance entre un point $(p_1, p_2, p_3)$ et une droite avec $\vec{n} = (a, b, c)$ : $\frac{ap_1+bp_2+cp_3+d}{\sqrt{a^2+b^2+c^2}}$
-\section*{S\'eance 8:g\'eom\'etrie dans l'espace}
+\indent Distance entre un point $(p_1, p_2, p_3)$ et une droite avec $\vec{n} = (a, b, c)$ : $\frac{ap_1+bp_2+cp_3+d}{\sqrt{a^2+b^2+c^2}}$ \\ \newline
+\indent $Aire_{parall\acute ellogramme} = \|\vec{v_{1}} \times \vec{v_{2}} \|$
+\indent $Aire_{triangle} = \frac{Aire_{parall\acute ellogramme}}{2}$
+
+\section*{S\'eance 8: g\'eom\'etrie dans l'espace}
 ...
-\section*{S\'eance 9:fonctions et \'equations trigonom\'etriques et logarithmes}
+
+\section*{S\'eance 9: fonctions et \'equations trigonom\'etriques et logarithmes}
+
 \begin{tabular}{r|ccccc}
 	/ & $0$ & $\frac{\pi}{6}$ & $\frac{\pi}{4}$ & $\frac{\pi}{3}$ & $\frac{\pi}{2}$ \\
 	\hline
@@ -108,10 +129,14 @@ $\vec{u}\cdot\vec{v} = \|\vec{u}\| \cdot \|\vec{v}\| \cdot \cos{\theta}$ \\ \new
 $\log_{a}(xy) = \log_{a}(x) + \log_{a}(y)$ \\
 $\log_{a}(x^{n}) = n\log{a}(x)$ \\
 $\log_{a}(a^{x}) = x = a^{\log_{a}(x)}$ \\
-$\log_{a}(x) = \frac{\log_{b}(x)}{\log_{b}(a)}$ \\ \newline
+$\log_{a}(x) = \frac{\log_{b}(x)}{\log_{b}(a)}$ \\ 
+$\log_{a}(b) = \frac{1}{\log_{a}(b)}$
+\newline
 $\sin{(a+b)} = \sin{a}\cos{b}+\cos{a}\sin{b}$ \\ 
 $\cos{(a+b)} = \cos{a}\cos{b}-\sin{a}\sin{b}$
-\section*{S\'eance 10:limites}
+
+\section*{S\'eance 10: limites}
+
 Si $\underset{x\to a}\lim f$ et $\underset{x\to a}\lim g$  $\exists$ $\Rightarrow$ 
 \(
 \begin{array}{lcl}
@@ -127,13 +152,17 @@ Si $\underset{x\to a}\lim f$ et $\underset{x\to a}\lim g$  $\exists$ $\Rightarro
 
 \noindent La droite $y = mx + b$ est une asymptote oblique \`a $f$ si:\(\underset{x\to \pm \infty}\lim \frac{f(x)}{x} = m \not= 0 \) et \(\underset{x\to \pm \infty}\lim f(x)-m(x) = b \) \\ \newline
 $f$ est asymptotiquement du m\^eme ordre que $g$ si : $\underset{x\to \infty}\lim |\frac{f(x)}{g(x)}| \in \mathbb{R}\backslash_{\{0\}}$
-\section*{S\'eance 12:d\'eriv\'ees}
+\newpage
+
+\section*{S\'eance 12: d\'eriv\'ees}
+
 Si $f$ est d\'erivable, alors $y = f'(a)(x-a)+f(a)$ est la droite tangente de $f$ au point $(a, f(a))$. \\
 \indent $f'(a)$ est donc la pente de la tangente au point $(a, f(a)$. \\
 \indent Si $f'(a) > 0 \Rightarrow f$ cro\^it. \\
 \indent Si $f'(a) < 0 \Rightarrow f$ d\'ecro\^it.
 
-\section*{S\'eance 13:d\'eriv\'ees}
+\section*{S\'eance 13: d\'eriv\'ees}
+
 $f'(a)$ est : 
 \begin{itemize}\renewcommand{\labelitemi}{$\bullet$}
 \item la pente de la tangente de $f$ au point $a$
@@ -146,7 +175,9 @@ Le polyn\^ome de Taylor de $f$ au point $a$ d'ordre $n$ est: \[T_{f, a, n}(x) = 
 L'erreur commise $R_{n, a, f} = f^{(n+1)}(t)\frac{(x-a)^{n+1}}{(n+1)!}$ o\'u $t$ est entre $x$ et $a$ \\ \newline
 D\'eveloppement de MacLaurin = Taylor en $0$.
 \newpage
-\section*{S\'eance 15:primitives}
+
+\section*{S\'eance 15: primitives}
+
 $\int{f(x) dx} = F(x)$ \\
 \indent tel que $F'(x) = f(x)$
 \begin{multicols}{2}
@@ -172,7 +203,8 @@ $\int{f(x) dx} = F(x)$ \\
 20) $\int{k dx} = kx + C$
 \end{multicols}
 
-\section*{S\'eance 16:int\'egration par substitution}
+\section*{S\'eance 16: int\'egration par substitution}
+
 $\int{f(g(x))\cdot g'(x) dx} = F'(g(x)) + C$ \\
 \newline
 L'id\'ee: on pose 
@@ -181,11 +213,15 @@ t &=& g(x) \\
 \frac{dt}{dx} &=& g'(x) 
 \end{array} \) $\Rightarrow \int{f(g(x)) \cdot g'(x) dx} = \int{f(t) dt} = F(t) + C = F(g(x)) + C$ \\
 
-\section*{S\'eance 17:int\'egration par partie}
+\section*{S\'eance 17: int\'egration par partie}
+
 $(fg)' = f'g + g'f \Rightarrow \int{f'g} = fg - \int{g'f}$ 
-\section*{S\'eance 18:fractions simples et int\'egrales d\'efinies}
+
+\section*{S\'eance 18: fractions simples et int\'egrales d\'efinies}
+
 ...
-\section*{S\'eance 19:int\'egrales d\'efinies}
+
+\section*{S\'eance 19: int\'egrales d\'efinies}
 
 Si on int\`egre jusqu'en $\pm \infty$ ex: $\int_{0}^{\infty}{e^{-x} dx}$ \\
 
@@ -202,15 +238,23 @@ Si on int\`egre une fonction non-born\'ee ex: $\int_{0}^{1}{\frac{1}{x} dx}$ \\
 	& \( = \) & \(\underset{u\to 0}\lim{\ln(1) - ln(u)} = -(-\infty) = \infty\)
 \end{tabular}
 
-\section*{S\'eance 20:courbes}
+\section*{S\'eance 20: courbes}
+
 Si $\gamma(t)$ est la courbe position: \\
 \begin{tabular}{r c c l }
 	\(\Rightarrow\) & \(\vec{v}\) & \( = \) & \(\gamma(t)'\) est le vecteur vitesse (ou vecteur tangent)\\
 	& \(\vec{a}\) & \( = \) & \(\vec{v}' = \gamma(t)''\) est le vecteur acc\'el\'eration (ou vecteur normal
 \end{tabular} \\ \newline
 norme : \(\|\vec{v}\| = \sqrt{v_{1}^{2} \cdot v_{2}^{2} \cdot ... \cdot v_{n}^{2} }\)
-\section*{S\'eance 21:matrices et syt\`emes}
-...
 
+\section*{ S\'eance 21:matrices et syt\`emes}
 
+ Inverse d'une matrice: $\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}^{-1} = \frac{1}{det A} \cdot \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$
+
+\section*{Fin premier quadrimestre}
+\paragraph{Pour des notes plus compl\`etes, voir la synth\`ese de Marie ;)}
+\paragraph{Pour les notes les plus compl\`etes possible, voir le cours !}
 \end{document}
